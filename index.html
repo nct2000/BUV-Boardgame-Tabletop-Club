@@ -720,6 +720,95 @@ footer {
   }
 }
 
+/* ── NEON FLICKER ── */
+@keyframes neonFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 20px var(--red),
+      0 0 40px var(--red),
+      0 0 80px var(--red2);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    opacity: 0.85;
+  }
+}
+
+@keyframes neonFlickerBlue {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 12px #fff,
+      0 0 24px var(--blue2),
+      0 0 50px var(--blue),
+      0 0 90px var(--blue);
+  }
+  19%, 23%, 54%, 56% {
+    text-shadow: none;
+    opacity: 0.8;
+  }
+}
+
+@keyframes neonFlickerGold {
+  0%, 20%, 22%, 60%, 62%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 22px var(--gold),
+      0 0 50px var(--gold);
+  }
+  21%, 61% {
+    text-shadow: none;
+    opacity: 0.85;
+  }
+}
+
+.hero-title .club {
+  animation: neonFlicker 4s infinite;
+}
+
+.season-badge {
+  animation: neonFlickerGold 5s 1s infinite, fadeSlideUp 0.6s ease both;
+}
+
+.dept-game .dept-title {
+  animation: neonFlickerBlue 6s 0.5s infinite;
+}
+
+.dept-marketing .dept-title {
+  text-shadow:
+    0 0 6px #fff,
+    0 0 14px var(--teal),
+    0 0 30px var(--teal);
+}
+
+.dept-event .dept-title {
+  animation: neonFlickerGold 7s 1s infinite;
+}
+
+.dept-finance .dept-title {
+  text-shadow:
+    0 0 6px #fff,
+    0 0 14px var(--purple),
+    0 0 30px var(--purple);
+}
+
+.cta-title .line2 {
+  animation: neonFlicker 3.5s 0.8s infinite;
+}
+
+.cta-eyebrow {
+  text-shadow:
+    0 0 6px var(--red),
+    0 0 14px var(--red);
+}
+
+.deadline-bar {
+  text-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+  
 </style>
 </head>
 <body>
