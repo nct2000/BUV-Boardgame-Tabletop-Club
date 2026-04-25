@@ -261,14 +261,19 @@ body::before {
 /* Deadline banner */
 .deadline-bar {
   background: linear-gradient(90deg, var(--red) 0%, #c0284a 100%);
-  padding: 10px 0;
-  text-align: center;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
   font-family: 'Space Mono', monospace;
   font-size: 0.78rem;
   letter-spacing: 0.12em;
   color: white;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .deadline-bar::before {
@@ -680,7 +685,12 @@ footer {
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-left { padding: 60px 32px 40px; }
-  .hero-right { padding: 0 32px 60px; min-height: 40vh; }
+  .hero-right { 
+    padding: 0 32px 60px; 
+    min-height: 50vh; 
+    height: 50vh;
+  }
+  .hero-mascot-wrap { height: 100%; }
   .gm-img { width: min(260px, 65%); }
   .section { padding: 60px 32px; }
   .member-section { padding: 60px 32px; }
