@@ -214,7 +214,7 @@ body::before {
   filter: drop-shadow(-12px 20px 40px rgba(224,58,91,0.3));
   animation: floatGM 4s ease-in-out infinite, fadeSlideUp 0.8s 0.2s ease both;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .sticker-img {
@@ -224,6 +224,7 @@ body::before {
   left: 8%;
   filter: drop-shadow(4px 8px 16px rgba(74,92,207,0.4));
   animation: floatCube 3.5s 0.8s ease-in-out infinite;
+  z-index: 2;
 }
 
 /* Decorative eye symbol floating */
@@ -684,10 +685,10 @@ footer {
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-left { padding: 60px 32px 40px; }
-  .hero-right { 
-    padding: 0 32px 60px; 
-    min-height: 50vh; 
-    height: 50vh;
+  .hero-right {
+    padding: 20px 32px 60px;
+    min-height: 55vh;
+    height: 55vh;
   }
   .hero-mascot-wrap { height: 100%; }
   .gm-img { width: min(260px, 65%); }
@@ -697,6 +698,14 @@ footer {
   footer { padding: 24px 32px; flex-direction: column; gap: 12px; text-align: center; }
   .divider { margin: 0 32px; }
   .cta-gm, .cta-cube { display: none; }
+
+  /* deadline bar */
+  .deadline-bar {
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    padding: 10px 12px;
+    line-height: 1.7;
+  }
 }
 
 </style>
