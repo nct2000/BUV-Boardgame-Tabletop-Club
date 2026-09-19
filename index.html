@@ -338,6 +338,7 @@ body::before {
 .dept-marketing .dept-header::after { background: var(--teal); }
 .dept-event .dept-header::after { background: var(--gold); }
 .dept-finance .dept-header::after { background: var(--purple); }
+.dept-hr .dept-header::after { background: var(--red2); }
 
 .dept-icon {
   font-size: 2rem;
@@ -354,6 +355,7 @@ body::before {
 .dept-marketing .dept-icon { background: rgba(56,217,192,0.12); }
 .dept-event .dept-icon { background: rgba(240,180,41,0.12); }
 .dept-finance .dept-icon { background: rgba(124,111,205,0.12); }
+.dept-hr .dept-icon { background: rgba(224,58,91,0.12); }
 
 .dept-title {
   font-family: 'Oswald', sans-serif;
@@ -367,6 +369,7 @@ body::before {
 .dept-marketing .dept-title { color: var(--teal); }
 .dept-event .dept-title { color: var(--gold); }
 .dept-finance .dept-title { color: var(--purple); }
+.dept-hr .dept-title { color: var(--red2); }
 
 .dept-en {
   font-family: 'Space Mono', monospace;
@@ -405,6 +408,7 @@ body::before {
 .dept-marketing .role-card::before { background: linear-gradient(90deg, var(--teal), #7af0dc); }
 .dept-event .role-card::before { background: linear-gradient(90deg, var(--gold), #ffe380); }
 .dept-finance .role-card::before { background: linear-gradient(90deg, var(--purple), #a998e8); }
+.dept-hr .role-card::before { background: linear-gradient(90deg, var(--red), var(--red2)); }
 
 .role-card:hover {
   transform: translateY(-4px);
@@ -415,6 +419,7 @@ body::before {
 .dept-marketing .role-card:hover { box-shadow: 0 12px 40px rgba(56,217,192,0.15); }
 .dept-event .role-card:hover { box-shadow: 0 12px 40px rgba(240,180,41,0.15); }
 .dept-finance .role-card:hover { box-shadow: 0 12px 40px rgba(124,111,205,0.2); }
+.dept-hr .role-card:hover { box-shadow: 0 12px 40px rgba(224,58,91,0.2); }
 
 .role-meta {
   font-family: 'Space Mono', monospace;
@@ -798,6 +803,12 @@ footer {
     0 0 12px var(--purple);
 }
 
+.dept-hr .dept-title {
+  text-shadow:
+    0 0 4px var(--red),
+    0 0 12px var(--red2);
+}
+
 .cta-title .line2 {
   animation: neonFlicker 3.5s 0.8s infinite;
 }
@@ -858,50 +869,48 @@ footer {
 <div class="section">
   <p class="section-label">Các vị trí tuyển dụng</p>
 
-  <div class="dept-block dept-game">
+  <!-- FINANCE -->
+  <div class="dept-block dept-finance">
     <div class="dept-header">
-      <div class="dept-icon">🎮</div>
+      <div class="dept-icon">💰</div>
       <div>
-        <h2 class="dept-title">BAN CHUYÊN MÔN</h2>
-        <span class="dept-en">GAME TEAM</span>
+        <h2 class="dept-title">BAN TÀI CHÍNH &amp; ĐỐI NGOẠI</h2>
+        <span class="dept-en">FINANCE &amp; PUBLIC RELATIONS TEAM</span>
       </div>
     </div>
     <div class="roles-grid">
       <div class="role-card">
-        <p class="role-meta">Game Team · Core Role</p>
-        <span class="role-icon">🧙</span>
-        <h3 class="role-title">Game Master (GM)</h3>
-        <p class="role-tagline">"Linh hồn của CLB"</p>
+        <p class="role-meta">Finance &amp; Public Relations Team · Finance</p>
+        <span class="role-icon">💵</span>
+        <h3 class="role-title">Finance</h3>
+        <p class="role-tagline">"Quản lý tiền quỹ CLB"</p>
         <p class="role-section-title">Công Việc</p>
         <ul class="role-list">
-          <li>Giải thích luật game cho người chơi</li>
-          <li>Setup bàn chơi trước mỗi session</li>
-          <li>Hướng dẫn và dẫn dắt người mới</li>
-          <li>Đảm bảo game diễn ra mượt mà</li>
+          <li>Quản lý thu – chi của CLB</li>
+          <li>Lập báo cáo tài chính định kỳ</li>
+          <li>Lập ngân sách cho từng sự kiện</li>
         </ul>
         <p class="role-section-title">Yêu Cầu</p>
         <div class="req-tags">
-          <span class="req-tag">Biết nhiều thể loại board game</span>
-          <span class="req-tag">Diễn đạt rõ ràng</span>
-          <span class="req-tag">Nhiệt tình, kiên nhẫn</span>
+          <span class="req-tag">Trung thực, minh bạch</span>
+          <span class="req-tag">Quản lý số liệu tốt</span>
         </div>
       </div>
       <div class="role-card">
-        <p class="role-meta">Game Team · Management</p>
-        <span class="role-icon">📦</span>
-        <h3 class="role-title">Game Curator</h3>
-        <p class="role-tagline">"Quản lý kho game"</p>
+        <p class="role-meta">Finance &amp; Public Relations Team · External</p>
+        <span class="role-icon">🤝</span>
+        <h3 class="role-title">Partnership</h3>
+        <p class="role-tagline">"Tìm tài trợ &amp; hợp tác"</p>
         <p class="role-section-title">Công Việc</p>
         <ul class="role-list">
-          <li>Lên danh sách game phù hợp với CLB</li>
-          <li>Bảo quản, kiểm kê board game định kỳ</li>
-          <li>Đề xuất mua game mới theo nhu cầu</li>
+          <li>Liên hệ các quán cafe board game</li>
+          <li>Tìm kiếm và duy trì quan hệ với sponsor</li>
+          <li>Kết nối và hợp tác với các CLB khác</li>
         </ul>
         <p class="role-section-title">Yêu Cầu</p>
         <div class="req-tags">
-          <span class="req-tag">Hiểu biết về board game</span>
-          <span class="req-tag">Cẩn thận</span>
-          <span class="req-tag">Tinh thần trách nhiệm cao</span>
+          <span class="req-tag">Giao tiếp tốt</span>
+          <span class="req-tag">Tự tin, chủ động</span>
         </div>
       </div>
     </div>
@@ -971,100 +980,40 @@ footer {
     </div>
   </div>
 
-  <!-- EVENT -->
-  <div class="dept-block dept-event">
+  <!-- HR -->
+  <div class="dept-block dept-hr">
     <div class="dept-header">
-      <div class="dept-icon">🎪</div>
+      <div class="dept-icon">🧑‍💼</div>
       <div>
-        <h2 class="dept-title">BAN SỰ KIỆN</h2>
-        <span class="dept-en">EVENT TEAM</span>
+        <h2 class="dept-title">BAN NHÂN SỰ</h2>
+        <span class="dept-en">HUMAN RESOURCES TEAM</span>
       </div>
     </div>
     <div class="roles-grid">
       <div class="role-card">
-        <p class="role-meta">Event Team · Planning</p>
-        <span class="role-icon">📋</span>
-        <h3 class="role-title">Event Planner</h3>
-        <p class="role-tagline">"Lên kế hoạch event"</p>
+        <p class="role-meta">HR Team</p>
+        <span class="role-icon">🔍</span>
+        <h3 class="role-title">Human Resources (HR)</h3>
+        <p class="role-tagline">"Tuyển dụng & giữ lửa nội bộ CLB"</p>
         <p class="role-section-title">Công Việc</p>
         <ul class="role-list">
-          <li>Lên concept sự kiện (giải đấu, offline, themed night…)</li>
-          <li>Viết timeline và kịch bản chi tiết</li>
-          <li>Phối hợp với các ban để vận hành sự kiện</li>
+          <li>Lên kế hoạch và triển khai mùa tuyển thành viên</li>
+          <li>Sàng lọc form đăng ký, liên hệ và onboarding ứng viên</li>
+          <li>Theo dõi và cập nhật danh sách nhân sự CLB</li>
+          <li>Xây dựng văn hóa và tinh thần nội bộ CLB</li>
+          <li>Tổ chức hoạt động gắn kết, thu thập feedback thành viên</li>
         </ul>
         <p class="role-section-title">Yêu Cầu</p>
         <div class="req-tags">
-          <span class="req-tag">Lên kế hoạch tốt</span>
-          <span class="req-tag">Tư duy sáng tạo</span>
-          <span class="req-tag">Nhiều ý tưởng</span>
-        </div>
-      </div>
-      <div class="role-card">
-        <p class="role-meta">Event Team · Operations</p>
-        <span class="role-icon">⚙️</span>
-        <h3 class="role-title">Event Staff</h3>
-        <p class="role-tagline">"Vận hành sự kiện"</p>
-        <p class="role-section-title">Công Việc</p>
-        <ul class="role-list">
-          <li>Setup địa điểm trước sự kiện</li>
-          <li>Check-in người chơi khi đến</li>
-          <li>Hỗ trợ GM và các bàn chơi</li>
-        </ul>
-        <p class="role-section-title">Yêu Cầu</p>
-        <div class="req-tags">
-          <span class="req-tag">Nhiệt tình, năng động</span>
-          <span class="req-tag">Làm việc nhóm tốt</span>
+          <span class="req-tag">Giao tiếp tốt</span>
+          <span class="req-tag">Tổ chức, cẩn thận</span>
+          <span class="req-tag">Nhiệt tình với con người</span>
+          <span class="req-tag">Empathy cao</span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- FINANCE -->
-  <div class="dept-block dept-finance">
-    <div class="dept-header">
-      <div class="dept-icon">💰</div>
-      <div>
-        <h2 class="dept-title">BAN TÀI CHÍNH &amp; ĐỐI NGOẠI</h2>
-        <span class="dept-en">FINANCE &amp; PUBLIC RELATIONS TEAM</span>
-      </div>
-    </div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <p class="role-meta">Finance &amp; Public Relations Team · Finance</p>
-        <span class="role-icon">💵</span>
-        <h3 class="role-title">Finance</h3>
-        <p class="role-tagline">"Quản lý tiền quỹ CLB"</p>
-        <p class="role-section-title">Công Việc</p>
-        <ul class="role-list">
-          <li>Quản lý thu – chi của CLB</li>
-          <li>Lập báo cáo tài chính định kỳ</li>
-          <li>Lập ngân sách cho từng sự kiện</li>
-        </ul>
-        <p class="role-section-title">Yêu Cầu</p>
-        <div class="req-tags">
-          <span class="req-tag">Trung thực, minh bạch</span>
-          <span class="req-tag">Quản lý số liệu tốt</span>
-        </div>
-      </div>
-      <div class="role-card">
-        <p class="role-meta">Finance &amp; Public Relations Team · External</p>
-        <span class="role-icon">🤝</span>
-        <h3 class="role-title">Partnership</h3>
-        <p class="role-tagline">"Tìm tài trợ &amp; hợp tác"</p>
-        <p class="role-section-title">Công Việc</p>
-        <ul class="role-list">
-          <li>Liên hệ các quán cafe board game</li>
-          <li>Tìm kiếm và duy trì quan hệ với sponsor</li>
-          <li>Kết nối và hợp tác với các CLB khác</li>
-        </ul>
-        <p class="role-section-title">Yêu Cầu</p>
-        <div class="req-tags">
-          <span class="req-tag">Giao tiếp tốt</span>
-          <span class="req-tag">Tự tin, chủ động</span>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 </div>
 
